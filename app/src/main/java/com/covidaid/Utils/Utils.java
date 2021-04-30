@@ -18,6 +18,13 @@ public class Utils {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
+    public static void setDashboardFragment(Fragment fragment, FragmentManager fragmentManager){
+
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.dashboard_host, fragment);
+        fragmentTransaction.addToBackStack(null);
+        fragmentTransaction.commit();
+    }
     public static class DetailsTransition extends TransitionSet {
         public DetailsTransition() {
             setOrdering(ORDERING_TOGETHER);

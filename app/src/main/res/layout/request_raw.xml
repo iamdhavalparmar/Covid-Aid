@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:padding="@dimen/_10sdp">
+
+<androidx.cardview.widget.CardView
+    android:layout_width="match_parent"
+    android:layout_height="@dimen/_200sdp"
+    app:layout_constraintLeft_toLeftOf="parent"
+    app:layout_constraintRight_toRightOf="parent"
+    app:layout_constraintTop_toTopOf="parent"
+    app:cardCornerRadius="@dimen/_20sdp"
+    >
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/need"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Need:"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/age"
+            />
+
+        <TextView
+            android:id="@+id/needdescription"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Plasma"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintLeft_toRightOf="@id/need"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintBottom_toTopOf="@id/agedescr"
+            />
+
+        <TextView
+            android:id="@+id/age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Age"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/need"
+            app:layout_constraintBottom_toTopOf="@id/gender"
+            />
+
+        <TextView
+            android:id="@+id/agedescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="15"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintLeft_toRightOf="@id/age"
+            app:layout_constraintTop_toBottomOf="@id/needdescription"
+            app:layout_constraintBottom_toTopOf="@id/genderdescr"
+            />
+
+        <TextView
+            android:id="@+id/gender"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/age"
+            app:layout_constraintBottom_toTopOf="@id/quantity"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Gender:"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/genderdescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="M"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintLeft_toRightOf="@id/gender"
+            app:layout_constraintTop_toBottomOf="@id/agedescr"
+            app:layout_constraintBottom_toTopOf="@id/quantitydescr"
+
+            />
+
+        <TextView
+            android:id="@+id/quantity"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/gender"
+            app:layout_constraintBottom_toTopOf="@id/bg"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Quantity:"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+
+            />
+
+        <TextView
+            android:id="@+id/quantitydescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintLeft_toRightOf="@id/quantity"
+            app:layout_constraintTop_toBottomOf="@id/genderdescr"
+            app:layout_constraintBottom_toTopOf="@id/bgdescr"
+
+            />
+
+        <TextView
+            android:id="@+id/bg"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/quantity"
+            app:layout_constraintBottom_toTopOf="@id/description"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Blood Group:"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+
+
+            />
+        <TextView
+            android:id="@+id/bgdescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="3"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintLeft_toRightOf="@id/bg"
+            app:layout_constraintTop_toBottomOf="@id/quantitydescr"
+            app:layout_constraintBottom_toTopOf="@id/descriptiondescr"
+            />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/bg"
+            android:layout_marginTop="@dimen/_10sdp"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_semibold"
+            android:text="Description:"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+
+            />
+        <TextView
+            android:id="@+id/descriptiondescr"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/_5sdp"
+            android:layout_marginBottom="@dimen/_10sdp"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="asdsfsd"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp"
+            app:layout_constraintLeft_toRightOf="@id/description"
+            app:layout_constraintTop_toBottomOf="@id/bgdescr"
+            app:layout_constraintBottom_toBottomOf="parent"
+            />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>

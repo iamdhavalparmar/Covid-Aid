@@ -59,13 +59,14 @@
             >
 
             <EditText
+                android:background="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:autofillHints="@string/enter_name"
                 android:fontFamily="@font/montserrat_regular"
                 android:hint="@string/enter_name"
                 android:inputType="text"
-                android:textColor="@color/blue"
+                android:textColor="@color/black"
                 android:textSize="@dimen/_15sdp" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
@@ -75,7 +76,7 @@
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_height="wrap_content"
             android:focusable="true"
-            app:hintTextColor="@color/white"
+            app:hintTextColor="@color/black"
             android:focusableInTouchMode="true"
             android:padding="@dimen/_5sdp"
             app:layout_constraintBottom_toTopOf="@id/enterpassword"
@@ -85,15 +86,15 @@
             android:layout_marginTop="@dimen/_15sdp"
             >
             <EditText
-                android:background="@color/blue"
+                android:background="@color/white"
                 android:layout_width="match_parent"
                 android:fontFamily="@font/montserrat_regular"
                 android:textSize="@dimen/_15sdp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_phone"
                 android:autofillHints="@string/enter_phone"
-                android:inputType="number" />
+                />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
             android:id="@+id/enterpassword"
@@ -102,7 +103,7 @@
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_height="wrap_content"
             android:focusable="true"
-            app:hintTextColor="@color/white"
+            app:hintTextColor="@color/black"
             android:focusableInTouchMode="true"
             android:padding="@dimen/_5sdp"
             app:layout_constraintBottom_toTopOf="@id/enterrepass"
@@ -112,14 +113,13 @@
             android:layout_marginTop="@dimen/_15sdp"
             >
             <EditText
-                android:background="@color/blue"
                 android:layout_width="match_parent"
                 android:fontFamily="@font/montserrat_regular"
                 android:textSize="@dimen/_15sdp"
-                android:textColor="@color/white"
+                android:background="@color/white"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:hint="@string/enter_password"
-                android:autofillHints="@string/enter_password"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
 
@@ -130,7 +130,7 @@
             android:layout_marginRight="@dimen/_10sdp"
             android:layout_height="wrap_content"
             android:focusable="true"
-            app:hintTextColor="@color/white"
+            app:hintTextColor="@color/black"
             android:focusableInTouchMode="true"
             android:padding="@dimen/_5sdp"
             app:layout_constraintBottom_toTopOf="@id/signupbutton"
@@ -140,14 +140,13 @@
             android:layout_marginTop="@dimen/_15sdp"
             >
             <EditText
-                android:background="@color/blue"
+                android:background="@color/white"
                 android:layout_width="match_parent"
                 android:fontFamily="@font/montserrat_regular"
                 android:textSize="@dimen/_15sdp"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:layout_height="wrap_content"
                 android:hint="@string/re_enter_password"
-                android:autofillHints="@string/re_enter_password"
                 android:inputType="textPassword" />
         </com.google.android.material.textfield.TextInputLayout>
         <Button

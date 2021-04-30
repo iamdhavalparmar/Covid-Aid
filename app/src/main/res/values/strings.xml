@@ -15,4 +15,7 @@
     <string name="enter_password">Enter Password</string>
     <string name="re_enter_password">Re-Enter Password</string>
     <string name="sing_up">Sing Up</string>
+    <string name="plasma_request">Need Request</string>
+    <string name="available_donor">Available Donor</string>
+    <string name="other_information">Other Information</string>
 </resources>
