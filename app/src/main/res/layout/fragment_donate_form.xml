@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/donate_details"
+        android:layout_marginTop="@dimen/_10sdp"
+        android:textColor="@color/ligh_blue"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintBottom_toTopOf="@id/entername"
+        android:id="@+id/hitext"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:textSize="@dimen/_15sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        />
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+
+        android:id="@+id/entername"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@id/enterphone"
+        app:layout_constraintTop_toBottomOf="@id/hitext"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+
+        <AutoCompleteTextView
+            android:id="@+id/bloodgroup"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:autofillHints="@string/select_bloodgroup"
+            android:fontFamily="@font/montserrat_regular"
+            android:hint="@string/select_bloodgroup"
+            android:inputType="text"
+            android:textColor="@color/black"
+            android:textSize="@dimen/_15sdp" />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+
+        android:id="@+id/enterphone"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:hintTextColor="@color/black"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@id/enterpassword"
+        app:layout_constraintTop_toBottomOf="@id/entername"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_age"
+            android:autofillHints="@string/enter_age"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
+        android:id="@+id/enterpassword"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:hintTextColor="@color/black"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@id/enterrepass"
+        app:layout_constraintTop_toBottomOf="@id/enterphone"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+        <AutoCompleteTextView
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:hint="@string/select_bloodgroup"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/enterrepass"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:hintTextColor="@color/black"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@id/enetrdesc"
+        app:layout_constraintTop_toBottomOf="@id/enterpassword"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_med_condition"
+            android:inputType="textPassword" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+        android:id="@+id/enetrdesc"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="@dimen/_10sdp"
+        android:layout_marginRight="@dimen/_10sdp"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        app:hintTextColor="@color/black"
+        android:focusableInTouchMode="true"
+        android:padding="@dimen/_5sdp"
+        app:layout_constraintBottom_toTopOf="@id/signupbutton"
+        app:layout_constraintTop_toBottomOf="@id/enterrepass"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        android:layout_marginTop="@dimen/_15sdp"
+        >
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:fontFamily="@font/montserrat_regular"
+            android:textSize="@dimen/_15sdp"
+            android:textColor="@color/black"
+            android:layout_height="wrap_content"
+            android:hint="@string/enter_desc"
+            android:autofillHints="@string/enter_age"
+            />
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/signupbutton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/enetrdesc"
+        android:layout_marginTop="@dimen/_20sdp"
+        android:layout_marginLeft="@dimen/_20sdp"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:text="@string/submit"
+        android:textSize="@dimen/_15sdp"
+        android:layout_marginRight="@dimen/_20sdp" />
+</androidx.constraintlayout.widget.ConstraintLayout>

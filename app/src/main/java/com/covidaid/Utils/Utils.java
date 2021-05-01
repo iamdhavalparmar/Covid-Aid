@@ -25,6 +25,13 @@ public class Utils {
         fragmentTransaction.addToBackStack(null);
         fragmentTransaction.commit();
     }
+
+    public static void setBottomSheetFragment(Fragment fragment, FragmentManager fragmentManager){
+
+        FragmentTransaction fragmentTransaction = fragmentManager.beginTransaction();
+        fragmentTransaction.replace(R.id.formhost, fragment);
+        fragmentTransaction.commit();
+    }
     public static class DetailsTransition extends TransitionSet {
         public DetailsTransition() {
             setOrdering(ORDERING_TOGETHER);

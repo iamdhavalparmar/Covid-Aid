@@ -3,6 +3,7 @@
     <!-- TODO: Remove or change this placeholder text -->
     <string name="hello_blank_fragment">Hello blank fragment</string>
     <string name="signup">Sign Up</string>
+    <string name="submit">Submit</string>
     <string name="enter_email_phone">Enter Phone</string>
     <string name="login">Login</string>
     <string name="welcome">Welcome !</string>
@@ -11,11 +12,36 @@
     <string name="hi">Hi!</string>
     <string name="create_a_new_account">Create a new account</string>
     <string name="enter_name">Enter Name</string>
+    <string name="enter_need">Selecct Your Need</string>
     <string name="enter_phone">Enter Phone</string>
+    <string name="enter_age">Enter Your Age</string>
+    <string name="enter_desc">Enter Description</string>
     <string name="enter_password">Enter Password</string>
+    <string name="enter_med_condition">Enter Medical Condition</string>
+    <string name="select_bloodgroup">Select bloodgroup</string>
+    <string name="select_quantity">Enter Quantity</string>
     <string name="re_enter_password">Re-Enter Password</string>
     <string name="sing_up">Sing Up</string>
     <string name="plasma_request">Need Request</string>
     <string name="available_donor">Available Donor</string>
     <string name="other_information">Other Information</string>
+    <string name="donate_details">Donate Details</string>
+
+
+    <string-array name="blood_groups">
+        <item>O+</item>
+        <item>O-</item>
+        <item>A+</item>
+        <item>A-</item>
+        <item>B+</item>
+        <item>B-</item>
+        <item>AB+</item>
+        <item>AB-</item>
+    </string-array>
+    <string-array name="need">
+        <item>Donor</item>
+        <item>Hospital With Beds</item>
+        <item>Oxygen Suppliers</item>
+
+    </string-array>
 </resources>
