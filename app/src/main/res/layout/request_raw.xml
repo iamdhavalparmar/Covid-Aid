@@ -5,9 +5,9 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:padding="@dimen/_10sdp">
 
-<androidx.cardview.widget.CardView
+<com.google.android.material.card.MaterialCardView
     android:layout_width="match_parent"
-    android:layout_height="@dimen/_200sdp"
+    android:layout_height="wrap_content"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent"
@@ -27,7 +27,7 @@
             android:fontFamily="@font/montserrat_semibold"
             android:text="Need:"
             android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
             app:layout_constraintBottom_toTopOf="@id/age"
@@ -41,10 +41,10 @@
             android:fontFamily="@font/montserrat_regular"
             android:text="Plasma"
             android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_11sdp"
             app:layout_constraintLeft_toRightOf="@id/need"
-            app:layout_constraintTop_toTopOf="parent"
-            app:layout_constraintBottom_toTopOf="@id/agedescr"
+            app:layout_constraintTop_toTopOf="@id/need"
+            app:layout_constraintBottom_toBottomOf="@id/need"
             />
 
         <TextView
@@ -56,7 +56,7 @@
             android:fontFamily="@font/montserrat_semibold"
             android:text="Age"
             android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/need"
             app:layout_constraintBottom_toTopOf="@id/gender"
@@ -70,10 +70,10 @@
             android:fontFamily="@font/montserrat_regular"
             android:text="15"
             android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_11sdp"
             app:layout_constraintLeft_toRightOf="@id/age"
-            app:layout_constraintTop_toBottomOf="@id/needdescription"
-            app:layout_constraintBottom_toTopOf="@id/genderdescr"
+            app:layout_constraintTop_toTopOf="@id/age"
+            app:layout_constraintBottom_toBottomOf="@id/age"
             />
 
         <TextView
@@ -87,7 +87,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="Gender:"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
             android:textColor="@color/black"
 
             />
@@ -100,11 +100,10 @@
             android:fontFamily="@font/montserrat_regular"
             android:text="M"
             android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_11sdp"
             app:layout_constraintLeft_toRightOf="@id/gender"
-            app:layout_constraintTop_toBottomOf="@id/agedescr"
-            app:layout_constraintBottom_toTopOf="@id/quantitydescr"
-
+            app:layout_constraintTop_toTopOf="@id/gender"
+            app:layout_constraintBottom_toBottomOf="@id/gender"
             />
 
         <TextView
@@ -118,7 +117,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="Quantity:"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
             android:textColor="@color/black"
 
             />
@@ -131,10 +130,10 @@
             android:fontFamily="@font/montserrat_regular"
             android:text="3"
             android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_11sdp"
             app:layout_constraintLeft_toRightOf="@id/quantity"
-            app:layout_constraintTop_toBottomOf="@id/genderdescr"
-            app:layout_constraintBottom_toTopOf="@id/bgdescr"
+            app:layout_constraintTop_toTopOf="@id/quantity"
+            app:layout_constraintBottom_toBottomOf="@id/quantity"
 
             />
 
@@ -149,7 +148,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="Blood Group:"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
             android:textColor="@color/black"
 
 
@@ -162,10 +161,10 @@
             android:fontFamily="@font/montserrat_regular"
             android:text="3"
             android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_11sdp"
             app:layout_constraintLeft_toRightOf="@id/bg"
-            app:layout_constraintTop_toBottomOf="@id/quantitydescr"
-            app:layout_constraintBottom_toTopOf="@id/descriptiondescr"
+            app:layout_constraintTop_toTopOf="@id/bg"
+            app:layout_constraintBottom_toBottomOf="@id/bg"
             />
 
         <TextView
@@ -178,7 +177,7 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="Description:"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_12sdp"
             android:textColor="@color/black"
 
             />
@@ -187,16 +186,15 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginLeft="@dimen/_5sdp"
-            android:layout_marginBottom="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_regular"
             android:text="agggggsdsfsd"
             android:textColor="@color/black"
-            android:textSize="@dimen/_15sdp"
+            android:textSize="@dimen/_11sdp"
             app:layout_constraintLeft_toRightOf="@id/description"
-            app:layout_constraintTop_toBottomOf="@id/bgdescr"
-            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintTop_toTopOf="@id/description"
+            app:layout_constraintBottom_toBottomOf="@id/description"
             />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-</androidx.cardview.widget.CardView>
+</com.google.android.material.card.MaterialCardView>
 </androidx.constraintlayout.widget.ConstraintLayout>

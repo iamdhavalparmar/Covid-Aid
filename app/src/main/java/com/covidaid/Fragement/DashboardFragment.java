@@ -42,7 +42,7 @@ public class DashboardFragment extends Fragment {
     }
 
     private void dummydata() {
-        RequestData data = new RequestData("Plasma","19","Urgent nsdffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeed","100ml","O+","M");
+        RequestData data = new RequestData("Plasma","19","Urgent need","100ml","O+","M");
         itemlist.add(data);
 
         RequestData data1 = new RequestData("Plasma","19","Urgent need","100ml","O+","M");

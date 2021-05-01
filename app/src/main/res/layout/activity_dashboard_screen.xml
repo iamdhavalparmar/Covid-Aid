@@ -6,11 +6,27 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".DashboardScreen">
-    <FrameLayout
-    android:id="@+id/dashboard_host"
+
+    <com.google.android.material.appbar.AppBarLayout
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_marginBottom="@dimen/_30sdp"
+    android:layout_height="@dimen/_40sdp">
+
+    <com.google.android.material.appbar.MaterialToolbar
+        android:id="@+id/topAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/_40sdp"
+        app:title="Donor"
+        app:menu="@menu/toolbar_menu"
+        style="@style/Widget.MaterialComponents.Toolbar.Primary"
+        />
+
+    </com.google.android.material.appbar.AppBarLayout>
+    <FrameLayout
+        android:layout_marginTop="@dimen/_40sdp"
+        android:id="@+id/dashboard_host"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="@dimen/_30sdp"
     />
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomappbar"
