@@ -75,7 +75,7 @@
         app:hintTextColor="@color/black"
         android:focusableInTouchMode="true"
         android:padding="@dimen/_5sdp"
-        app:layout_constraintBottom_toTopOf="@id/enterpassword"
+        app:layout_constraintBottom_toTopOf="@id/bloodgroupcontainer"
         app:layout_constraintTop_toBottomOf="@id/entername"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -92,7 +92,7 @@
             />
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
-        android:id="@+id/enterpassword"
+        android:id="@+id/bloodgroupcontainer"
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
         android:layout_width="match_parent"
         android:layout_marginLeft="@dimen/_10sdp"
@@ -102,6 +102,7 @@
         app:hintTextColor="@color/black"
         android:focusableInTouchMode="true"
         android:padding="@dimen/_5sdp"
+        android:visibility="gone"
         app:layout_constraintBottom_toTopOf="@id/enterrepass"
         app:layout_constraintTop_toBottomOf="@id/enterphone"
         app:layout_constraintLeft_toLeftOf="parent"
@@ -109,6 +110,7 @@
         android:layout_marginTop="@dimen/_15sdp"
         >
         <AutoCompleteTextView
+
             android:id="@+id/bloodgroup"
             android:layout_width="match_parent"
             android:fontFamily="@font/montserrat_regular"
@@ -133,7 +135,7 @@
         android:focusableInTouchMode="true"
         android:padding="@dimen/_5sdp"
         app:layout_constraintBottom_toTopOf="@id/enetrdesc"
-        app:layout_constraintTop_toBottomOf="@id/enterpassword"
+        app:layout_constraintTop_toBottomOf="@id/bloodgroupcontainer"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="@dimen/_15sdp"

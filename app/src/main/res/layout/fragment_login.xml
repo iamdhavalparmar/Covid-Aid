@@ -14,6 +14,8 @@
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
+
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -36,59 +38,83 @@
         app:layout_constraintTop_toBottomOf="@id/welcometext"
         android:text="@string/sign_in_to_continue"
         android:fontFamily="@font/montserrat_semibold"
-        app:layout_constraintBottom_toTopOf="@id/enteremail"
+        app:layout_constraintBottom_toTopOf="@id/phonecontainer"
         android:textSize="@dimen/_18sdp"
         android:textColor="@color/ligh_blue"
         android:layout_marginTop="@dimen/_10sdp"
         android:layout_marginStart="@dimen/_20sdp"
         />
 
-        <EditText
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/phonecontainer"
             android:layout_width="match_parent"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
             android:layout_height="wrap_content"
-            android:id="@+id/enteremail"
-            android:backgroundTint="@color/black"
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginEnd="@dimen/_25sdp"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/logintext"
-            app:layout_constraintBottom_toTopOf="@id/enterpass"
-            android:textColor="@color/black"
-            android:textColorHint="@color/black"
-            android:hint="@string/enter_email_phone"
-            android:textSize="@dimen/_15sdp"
-            android:inputType="text"
-            android:autofillHints="@string/enter_name"
-            />
+            android:focusable="true"
+            app:hintTextColor="@color/black"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/_5sdp"
 
-        <EditText
-            android:layout_marginTop="@dimen/_20sdp"
-            android:layout_marginStart="@dimen/_20sdp"
-            android:layout_marginEnd="@dimen/_25sdp"
-            android:textColorHint="@color/black"
-            android:backgroundTint="@color/black"
-            android:id="@+id/enterpass"
-            app:layout_constraintBottom_toTopOf="@id/loginbutton"
-            app:layout_constraintTop_toBottomOf="@+id/enteremail"
+            app:layout_constraintTop_toBottomOf="@id/logintext"
+            app:layout_constraintBottom_toTopOf="@id/passwordcontainer"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:id="@+id/enteremail"
+                android:fontFamily="@font/montserrat_regular"
+                  android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="@string/enter_email_phone"
+                android:textSize="@dimen/_15sdp"
+                android:inputType="text"
+                android:autofillHints="@string/enter_name" />
+        </com.google.android.material.textfield.TextInputLayout>
+        <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
+            android:id="@+id/passwordcontainer"
             android:layout_width="match_parent"
-            android:fontFamily="@font/montserrat_regular"
-            android:textSize="@dimen/_15sdp"
-            android:inputType="textPassword"
-            android:textColor="@color/black"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginRight="@dimen/_10sdp"
             android:layout_height="wrap_content"
-            android:hint="@string/enter_password"
-            android:autofillHints="@string/enter_password" />
+            android:focusable="true"
+            app:hintTextColor="@color/black"
+            android:focusableInTouchMode="true"
+            android:padding="@dimen/_5sdp"
+
+            app:layout_constraintBottom_toTopOf="@id/loginbutton"
+            app:layout_constraintTop_toBottomOf="@id/phonecontainer"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            android:layout_marginTop="@dimen/_15sdp"
+            >
+            <com.google.android.material.textfield.TextInputEditText
+
+                android:layout_width="match_parent"
+                android:id="@+id/password"
+                android:fontFamily="@font/montserrat_regular"
+                android:layout_height="wrap_content"
+                android:textColor="@color/black"
+                android:textColorHint="@color/black"
+                android:hint="@string/enter_password"
+                android:textSize="@dimen/_15sdp"
+                android:inputType="text"
+                android:autofillHints="@string/enter_name" />
+        </com.google.android.material.textfield.TextInputLayout>
+
 
     <Button
         android:id="@+id/loginbutton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="@dimen/_30sdp"
-        app:layout_constraintTop_toBottomOf="@id/enterpass"
+        app:layout_constraintTop_toBottomOf="@id/passwordcontainer"
         android:text="@string/login"
         android:textSize="@dimen/_20sdp"
         android:fontFamily="@font/montserrat_semibold"

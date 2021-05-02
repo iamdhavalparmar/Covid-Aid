@@ -39,12 +39,12 @@
         >
 
         <AutoCompleteTextView
-            android:id="@+id/bloodgroup"
+            android:id="@+id/need"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:autofillHints="@string/select_bloodgroup"
             android:fontFamily="@font/montserrat_regular"
-            android:hint="@string/select_bloodgroup"
+            android:hint="@string/enter_need"
             android:inputType="text"
             android:textColor="@color/black"
             android:textSize="@dimen/_15sdp" />
@@ -61,7 +61,7 @@
         app:hintTextColor="@color/black"
         android:focusableInTouchMode="true"
         android:padding="@dimen/_5sdp"
-        app:layout_constraintBottom_toTopOf="@id/enterpassword"
+        app:layout_constraintBottom_toTopOf="@id/bloodgroupcontainer"
         app:layout_constraintTop_toBottomOf="@id/entername"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
@@ -79,12 +79,13 @@
     </com.google.android.material.textfield.TextInputLayout>
     <com.google.android.material.textfield.TextInputLayout
         style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox.ExposedDropdownMenu"
-        android:id="@+id/enterpassword"
+        android:id="@+id/bloodgroupcontainer"
         android:layout_width="match_parent"
         android:layout_marginLeft="@dimen/_10sdp"
         android:layout_marginRight="@dimen/_10sdp"
         android:layout_height="wrap_content"
         android:focusable="true"
+        android:visibility="gone"
         app:hintTextColor="@color/black"
         android:focusableInTouchMode="true"
         android:padding="@dimen/_5sdp"
@@ -95,6 +96,7 @@
         android:layout_marginTop="@dimen/_15sdp"
         >
         <AutoCompleteTextView
+            android:id="@+id/bloodgroup"
             android:layout_width="match_parent"
             android:fontFamily="@font/montserrat_regular"
             android:textSize="@dimen/_15sdp"
@@ -116,7 +118,7 @@
         android:focusableInTouchMode="true"
         android:padding="@dimen/_5sdp"
         app:layout_constraintBottom_toTopOf="@id/enetrdesc"
-        app:layout_constraintTop_toBottomOf="@id/enterpassword"
+        app:layout_constraintTop_toBottomOf="@id/bloodgroupcontainer"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
         android:layout_marginTop="@dimen/_15sdp"

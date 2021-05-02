@@ -1,5 +1,6 @@
 package com.covidaid.Fragement;
 
+import android.annotation.SuppressLint;
 import android.content.Intent;
 import android.os.Bundle;
 
@@ -30,6 +31,7 @@ public class BottomSheetFragment extends BottomSheetDialogFragment implements Vi
         return view;
     }
 
+    @SuppressLint("NonConstantResourceId")
     @Override
     public void onClick(View v) {
         switch (v.getId()){

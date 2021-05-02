@@ -26,7 +26,7 @@
         android:id="@+id/dashboard_host"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/_30sdp"
+        android:layout_marginBottom="@dimen/_40sdp"
     />
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomappbar"
@@ -41,7 +41,7 @@
 
                 <ImageButton
                     android:background="@android:color/transparent"
-                    android:id="@+id/first_menu_item"
+                    android:id="@+id/requestlist"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
@@ -49,58 +49,58 @@
                     android:src="@drawable/ic_request"
                     style="?android:borderlessButtonStyle"
                     app:layout_constraintBottom_toBottomOf="parent"
-                    app:layout_constraintEnd_toStartOf="@+id/second_menu_item"
+                    app:layout_constraintEnd_toStartOf="@+id/donatelist"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toStartOf="parent"
                     app:layout_constraintTop_toTopOf="parent" />
 
                 <ImageButton
-                    android:id="@+id/second_menu_item"
+                    android:id="@+id/donatelist"
                     style="?android:borderlessButtonStyle"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
                     android:src="@drawable/ic_donor"
-                    app:layout_constraintBottom_toBottomOf="@+id/first_menu_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/requestlist"
                     app:layout_constraintEnd_toStartOf="@+id/placeholder"
                     app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toEndOf="@+id/first_menu_item" />
+                    app:layout_constraintStart_toEndOf="@+id/requestlist" />
 
                 <View
                     android:id="@+id/placeholder"
                     android:layout_width="70dp"
                     android:layout_height="0dp"
                     android:visibility="invisible"
-                    app:layout_constraintBottom_toBottomOf="@+id/first_menu_item"
-                    app:layout_constraintEnd_toStartOf="@+id/third_menu_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/requestlist"
+                    app:layout_constraintEnd_toStartOf="@+id/otherinfo"
                     app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toEndOf="@+id/second_menu_item"
-                    app:layout_constraintTop_toTopOf="@+id/first_menu_item" />
+                    app:layout_constraintStart_toEndOf="@+id/donatelist"
+                    app:layout_constraintTop_toTopOf="@+id/requestlist" />
 
                 <ImageButton
                     style="?android:borderlessButtonStyle"
                     android:background="@color/white"
-                    android:id="@+id/third_menu_item"
+                    android:id="@+id/otherinfo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_information"
-                    app:layout_constraintBottom_toBottomOf="@+id/first_menu_item"
-                    app:layout_constraintEnd_toStartOf="@+id/fourth_menu_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/requestlist"
+                    app:layout_constraintEnd_toStartOf="@+id/profile"
                     app:layout_constraintHorizontal_chainStyle="packed"
                     app:layout_constraintStart_toEndOf="@+id/placeholder" />
 
                 <ImageButton
                     style="?android:borderlessButtonStyle"
                     android:background="@color/white"
-                    android:id="@+id/fourth_menu_item"
+                    android:id="@+id/profile"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:src="@drawable/ic_profile"
-                    app:layout_constraintBottom_toBottomOf="@+id/first_menu_item"
+                    app:layout_constraintBottom_toBottomOf="@+id/requestlist"
                     app:layout_constraintEnd_toEndOf="parent"
                     app:layout_constraintHorizontal_chainStyle="packed"
-                    app:layout_constraintStart_toEndOf="@+id/third_menu_item"
-                    app:layout_constraintTop_toTopOf="@+id/first_menu_item" />
+                    app:layout_constraintStart_toEndOf="@+id/otherinfo"
+                    app:layout_constraintTop_toTopOf="@+id/requestlist" />
 
             </androidx.constraintlayout.widget.ConstraintLayout>
 

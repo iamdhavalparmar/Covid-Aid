@@ -12,7 +12,7 @@
     <string name="hi">Hi!</string>
     <string name="create_a_new_account">Create a new account</string>
     <string name="enter_name">Enter Name</string>
-    <string name="enter_need">Selecct Your Need</string>
+    <string name="enter_need">Select Your Need</string>
     <string name="enter_phone">Enter Phone</string>
     <string name="enter_age">Enter Your Age</string>
     <string name="enter_desc">Enter Description</string>
@@ -26,6 +26,8 @@
     <string name="available_donor">Available Donor</string>
     <string name="other_information">Other Information</string>
     <string name="donate_details">Donate Details</string>
+    <string name="donate_request">Donate Request</string>
+    <string name="other_details_request">Other Details Request</string>
 
 
     <string-array name="blood_groups">
