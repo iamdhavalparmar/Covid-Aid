@@ -5,14 +5,16 @@
     android:layout_height="match_parent"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".Fragement.DashboardFragment"
+    android:background="#01399A"
     android:fillViewport="true"
     android:isScrollContainer="true"
-    android:background="@color/ligh_blue">
+    >
 
     <androidx.constraintlayout.widget.ConstraintLayout
         android:layout_width="match_parent"
         android:layout_height="match_parent">
     <TextView
+        app:layout_constraintHorizontal_chainStyle="spread"
         android:id="@+id/plasmarequest"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
@@ -23,8 +25,8 @@
         app:layout_constraintBottom_toTopOf="@id/plamacount"
         android:fontFamily="@font/montserrat_regular"
         android:text="@string/plasma_request"
-        android:textColor="@color/black"
-        android:textSize="@dimen/_12sdp"/>
+        android:textColor="@color/white"
+        android:textSize="@dimen/_11sdp"/>
     <TextView
         android:id="@+id/plamacount"
         android:layout_width="wrap_content"
@@ -34,8 +36,8 @@
         android:text="0000"
         app:layout_constraintRight_toRightOf="@id/plasmarequest"
         android:textSize="@dimen/_11sdp"
-        android:fontFamily="@font/montserrat_regular"
-        android:textColor="@color/black"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/white"
         />
     <TextView
         android:id="@+id/availabledonor"
@@ -46,10 +48,11 @@
         app:layout_constraintRight_toLeftOf="@id/otherinfo"
         android:layout_marginTop="@dimen/_5sdp"
         android:text="@string/available_donor"
-        android:textSize="@dimen/_12sdp"
+        android:fontFamily="@font/montserrat_regular"
+        android:textSize="@dimen/_11sdp"
         app:layout_constraintBottom_toBottomOf="@id/donorcount"
         app:layout_constraintBottom_toTopOf="@id/donorcount"
-        android:textColor="@color/black"/>
+        android:textColor="@color/white"/>
     <TextView
         android:id="@+id/donorcount"
         android:layout_width="wrap_content"
@@ -57,11 +60,10 @@
         app:layout_constraintTop_toBottomOf="@id/availabledonor"
         app:layout_constraintLeft_toLeftOf="@id/availabledonor"
         app:layout_constraintRight_toRightOf="@id/availabledonor"
-        android:layout_marginTop="@dimen/_5sdp"
         android:textSize="@dimen/_11sdp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="0000"
-        android:fontFamily="@font/montserrat_regular"
+        android:fontFamily="@font/montserrat_semibold"
         />
     <TextView
         app:layout_constraintTop_toTopOf="parent"
@@ -71,9 +73,10 @@
         app:layout_constraintRight_toRightOf="parent"
         app:layout_constraintLeft_toRightOf="@id/availabledonor"
         android:layout_marginTop="@dimen/_5sdp"
+        android:fontFamily="@font/montserrat_regular"
         android:text="@string/other_information"
-        android:textSize="@dimen/_12sdp"
-        android:textColor="@color/black"/>
+        android:textSize="@dimen/_11sdp"
+        android:textColor="@color/white"/>
     <TextView
         android:id="@+id/othercount"
         android:layout_width="wrap_content"
@@ -81,11 +84,10 @@
         app:layout_constraintTop_toBottomOf="@id/otherinfo"
         app:layout_constraintLeft_toLeftOf="@id/otherinfo"
         app:layout_constraintRight_toRightOf="@id/otherinfo"
-        android:layout_marginTop="@dimen/_5sdp"
         android:textSize="@dimen/_11sdp"
-        android:textColor="@color/black"
+        android:textColor="@color/white"
         android:text="0000"
-        android:fontFamily="@font/montserrat_regular"
+        android:fontFamily="@font/montserrat_semibold"
         />
         <com.google.android.material.card.MaterialCardView
             android:id="@+id/card"

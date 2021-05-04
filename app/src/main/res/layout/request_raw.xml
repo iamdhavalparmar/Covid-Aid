@@ -6,12 +6,15 @@
     android:padding="@dimen/_10sdp">
 
 <com.google.android.material.card.MaterialCardView
+    android:id="@+id/cardview"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
+    android:backgroundTint="#1A69C6"
     app:layout_constraintLeft_toLeftOf="parent"
     app:layout_constraintRight_toRightOf="parent"
     app:layout_constraintTop_toTopOf="parent"
-    app:cardCornerRadius="@dimen/_20sdp"
+    android:animateLayoutChanges="true"
+    app:cardCornerRadius="@dimen/_10sdp"
     >
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -26,7 +29,7 @@
             android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_semibold"
             android:text="Need:"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="@dimen/_12sdp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toTopOf="parent"
@@ -40,7 +43,7 @@
             android:layout_marginLeft="@dimen/_5sdp"
             android:fontFamily="@font/montserrat_regular"
             android:text="Plasma"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="@dimen/_11sdp"
             app:layout_constraintLeft_toRightOf="@id/need"
             app:layout_constraintTop_toTopOf="@id/need"
@@ -54,14 +57,12 @@
             android:layout_marginLeft="@dimen/_10sdp"
             android:layout_marginTop="@dimen/_10sdp"
             android:fontFamily="@font/montserrat_semibold"
-            android:text="Age"
-            android:textColor="@color/black"
+            android:text="Age:"
+            android:textColor="@color/white"
             android:textSize="@dimen/_12sdp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/need"
-            app:layout_constraintBottom_toTopOf="@id/gender"
             />
-
         <TextView
             android:id="@+id/agedescr"
             android:layout_width="wrap_content"
@@ -69,131 +70,161 @@
             android:layout_marginLeft="@dimen/_5sdp"
             android:fontFamily="@font/montserrat_regular"
             android:text="15"
-            android:textColor="@color/black"
+            android:textColor="@color/white"
             android:textSize="@dimen/_11sdp"
+            android:layout_marginTop="@dimen/_3sdp"
             app:layout_constraintLeft_toRightOf="@id/age"
             app:layout_constraintTop_toTopOf="@id/age"
             app:layout_constraintBottom_toBottomOf="@id/age"
+            app:layout_constraintBottom_toTopOf="@id/expand_details"
+            />
+        <Button
+            android:id="@+id/collapse"
+            android:layout_width="@dimen/_35sdp"
+            android:layout_height="@dimen/_35sdp"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toTopOf="@id/need"
+            android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
+            app:backgroundTint="@color/white"
+            app:layout_constraintBottom_toBottomOf="@id/need"
             />
 
-        <TextView
-            android:id="@+id/gender"
-            android:layout_width="wrap_content"
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:id="@+id/expand_details"
+            android:visibility="gone"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
             app:layout_constraintTop_toBottomOf="@id/age"
-            app:layout_constraintBottom_toTopOf="@id/quantity"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="Gender:"
-            android:textSize="@dimen/_12sdp"
-            android:textColor="@color/black"
-
-            />
-
-        <TextView
-            android:id="@+id/genderdescr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="M"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_11sdp"
-            app:layout_constraintLeft_toRightOf="@id/gender"
-            app:layout_constraintTop_toTopOf="@id/gender"
-            app:layout_constraintBottom_toBottomOf="@id/gender"
-            />
-
-        <TextView
-            android:id="@+id/quantity"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/gender"
-            app:layout_constraintBottom_toTopOf="@id/bg"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="Quantity:"
-            android:textSize="@dimen/_12sdp"
-            android:textColor="@color/black"
-
-            />
-
-        <TextView
-            android:id="@+id/quantitydescr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="3"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_11sdp"
-            app:layout_constraintLeft_toRightOf="@id/quantity"
-            app:layout_constraintTop_toTopOf="@id/quantity"
-            app:layout_constraintBottom_toBottomOf="@id/quantity"
-
-            />
-
-        <TextView
-            android:id="@+id/bg"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/quantity"
-            app:layout_constraintBottom_toTopOf="@id/description"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="Blood Group:"
-            android:textSize="@dimen/_12sdp"
-            android:textColor="@color/black"
+            app:layout_constraintVertical_bias="0.0">
 
 
-            />
-        <TextView
-            android:id="@+id/bgdescr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="3"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_11sdp"
-            app:layout_constraintLeft_toRightOf="@id/bg"
-            app:layout_constraintTop_toTopOf="@id/bg"
-            app:layout_constraintBottom_toBottomOf="@id/bg"
-            />
+            <TextView
+                android:id="@+id/gender"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Gender:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toTopOf="@id/quantity"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
 
-        <TextView
-            android:id="@+id/description"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            app:layout_constraintLeft_toLeftOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/bg"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="Description:"
-            android:textSize="@dimen/_12sdp"
-            android:textColor="@color/black"
+                />
 
-            />
-        <TextView
-            android:id="@+id/descriptiondescr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="agggggsdsfsd"
-            android:textColor="@color/black"
-            android:textSize="@dimen/_11sdp"
-            app:layout_constraintLeft_toRightOf="@id/description"
-            app:layout_constraintTop_toTopOf="@id/description"
-            app:layout_constraintBottom_toBottomOf="@id/description"
-            />
+            <TextView
+                android:id="@+id/genderdescr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="M"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="@id/gender"
+                app:layout_constraintLeft_toRightOf="@id/gender"
+                app:layout_constraintTop_toTopOf="@id/gender" />
+
+            <TextView
+                android:id="@+id/quantity"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Quantity:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toTopOf="@id/bg"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/gender"
+
+                />
+
+            <TextView
+                android:id="@+id/quantitydescr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="@id/quantity"
+                app:layout_constraintLeft_toRightOf="@id/quantity"
+                app:layout_constraintTop_toTopOf="@id/quantity"
+
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/bg"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Blood Group:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintBottom_toTopOf="@id/description"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/quantity"
+
+
+                />
+
+            <TextView
+                android:visibility="gone"
+                android:id="@+id/bgdescr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="3"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="@id/bg"
+                app:layout_constraintLeft_toRightOf="@id/bg"
+                app:layout_constraintTop_toTopOf="@id/bg" />
+
+            <TextView
+                android:id="@+id/description"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Description:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/bg"
+
+                />
+
+            <TextView
+                android:id="@+id/descriptiondescr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="agggggsdsfsd"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                app:layout_constraintBottom_toBottomOf="@id/description"
+                app:layout_constraintLeft_toRightOf="@id/description"
+                app:layout_constraintTop_toTopOf="@id/description"
+                />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
 
     </androidx.constraintlayout.widget.ConstraintLayout>
 </com.google.android.material.card.MaterialCardView>

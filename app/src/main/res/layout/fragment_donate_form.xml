@@ -9,8 +9,8 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/donate_details"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Doner Details"
+        android:layout_marginTop="@dimen/_20sdp"
         android:textColor="@color/ligh_blue"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/entername"

@@ -5,27 +5,14 @@
     xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto">
 
-    <TextView
-        android:id="@+id/signuptext"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintBottom_toTopOf="@id/hitext"
-        android:text="@string/hi"
-        android:textColor="@color/black"
-        android:layout_marginTop="@dimen/_10sdp"
-        android:layout_marginStart="@dimen/_12sdp"
-        android:fontFamily="@font/montserrat_semibold"
-        android:textSize="@dimen/_25sdp"
-        />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="@string/create_a_new_account"
-        android:layout_marginTop="@dimen/_10sdp"
+        android:text="Enter the details about your request"
+        android:layout_marginTop="@dimen/_30sdp"
         android:textColor="@color/ligh_blue"
-        app:layout_constraintTop_toBottomOf="@id/signuptext"
+        app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintBottom_toTopOf="@id/entername"
         android:id="@+id/hitext"
         android:layout_marginStart="@dimen/_12sdp"

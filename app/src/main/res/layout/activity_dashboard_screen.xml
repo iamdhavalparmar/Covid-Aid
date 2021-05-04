@@ -16,6 +16,7 @@
         android:layout_width="match_parent"
         android:layout_height="@dimen/_40sdp"
         app:title="Donor"
+        android:background="#01399A"
         app:menu="@menu/toolbar_menu"
         style="@style/Widget.MaterialComponents.Toolbar.Primary"
         />
@@ -26,7 +27,7 @@
         android:id="@+id/dashboard_host"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:layout_marginBottom="@dimen/_40sdp"
+        android:layout_marginBottom="@dimen/_60sdp"
     />
         <com.google.android.material.bottomappbar.BottomAppBar
             android:id="@+id/bottomappbar"
@@ -46,7 +47,7 @@
                     android:layout_height="wrap_content"
                     android:layout_marginTop="16dp"
                     android:layout_marginBottom="8dp"
-                    android:src="@drawable/ic_request"
+                    android:src="@drawable/ic_help_1"
                     style="?android:borderlessButtonStyle"
                     app:layout_constraintBottom_toBottomOf="parent"
                     app:layout_constraintEnd_toStartOf="@+id/donatelist"
@@ -60,7 +61,7 @@
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
                     android:background="@android:color/transparent"
-                    android:src="@drawable/ic_donor"
+                    android:src="@drawable/ic_box2"
                     app:layout_constraintBottom_toBottomOf="@+id/requestlist"
                     app:layout_constraintEnd_toStartOf="@+id/placeholder"
                     app:layout_constraintHorizontal_chainStyle="packed"
@@ -83,7 +84,7 @@
                     android:id="@+id/otherinfo"
                     android:layout_width="0dp"
                     android:layout_height="wrap_content"
-                    android:src="@drawable/ic_information"
+                    android:src="@drawable/ic_information_1"
                     app:layout_constraintBottom_toBottomOf="@+id/requestlist"
                     app:layout_constraintEnd_toStartOf="@+id/profile"
                     app:layout_constraintHorizontal_chainStyle="packed"
@@ -111,8 +112,9 @@
             android:layout_height="wrap_content"
             app:layout_anchor="@id/bottomappbar"
             android:id="@+id/openbottomsheet"
-            android:backgroundTint="@color/white"
-            app:srcCompat="@drawable/ic_baseline_add_24"
-            />
+            app:srcCompat="@drawable/ic_plus"
+            app:backgroundTint="#08397C"
+            app:tint="@null"
+             />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
