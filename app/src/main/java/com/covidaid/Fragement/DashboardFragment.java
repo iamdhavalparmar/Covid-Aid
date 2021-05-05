@@ -44,13 +44,13 @@ public class DashboardFragment extends Fragment {
     }
 
     private void dummydata() {
-        RequestData data = new RequestData("Hospital With Beds","19","Urgent need","100ml","O+","M");
+        RequestData data = new RequestData("Hospital With Beds","19","something","1","o+","M","Ahmedabad","Gujrat","123456");
         itemlist.add(data);
 
-        RequestData data1 = new RequestData("Donor","19","Urgent need","100ml","O+","M");
+        RequestData data1 = new RequestData("Oxygen","19","something","1","o+","M","Ahmedabad","Gujrat","123456");
         itemlist.add(data1);
 
-        RequestData data2 = new RequestData("Oxygen Suppliers","19","Urgent need","100ml","O+","M");
+        RequestData data2 = new RequestData("Donor","19","something","1","o+","M","Ahmedabad","Gujrat","123456");
         itemlist.add(data2);
     }
 }

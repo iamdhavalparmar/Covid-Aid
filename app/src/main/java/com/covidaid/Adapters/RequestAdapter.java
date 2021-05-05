@@ -45,6 +45,10 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
         holder.blood_group.setText(data.getBlood_group());
         holder.gender.setText(data.getGender());
         holder.quantity.setText(data.getQuantity());
+        holder.phone.setText(data.getPhone());
+        holder.state.setText(data.getState());
+        holder.city.setText(data.getCity());
+
         if(holder.need.getText().equals("Donor")){
             holder.blood_group.setVisibility(View.VISIBLE);
             holder.blood_group_text.setVisibility(View.VISIBLE);
@@ -71,12 +75,15 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
     }
 
     public class ViewHolder extends RecyclerView.ViewHolder {
-        TextView need,age,descirption,blood_group,gender,quantity,blood_group_text;
+        TextView need,age,descirption,blood_group,gender,quantity,blood_group_text,state,city,phone;
         ConstraintLayout expand;
         Button button;
         MaterialCardView cardView;
         public ViewHolder(@NonNull View itemView) {
             super(itemView);
+                state = itemView.findViewById(R.id.state_detail);
+                city  = itemView.findViewById(R.id.city_details);
+                phone = itemView.findViewById(R.id.phone_number);
                 blood_group_text = itemView.findViewById(R.id.bg);
                 cardView = itemView.findViewById(R.id.cardview);
                 button = itemView.findViewById(R.id.collapse);
@@ -87,7 +94,6 @@ public class RequestAdapter extends RecyclerView.Adapter<RequestAdapter.ViewHold
                 blood_group = itemView.findViewById(R.id.bgdescr);
                 gender = itemView.findViewById(R.id.genderdescr);
                 quantity = itemView.findViewById(R.id.quantitydescr);
-
         }
     }
 }

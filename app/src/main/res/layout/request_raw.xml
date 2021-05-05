@@ -49,35 +49,34 @@
             app:layout_constraintTop_toTopOf="@id/need"
             app:layout_constraintBottom_toBottomOf="@id/need"
             />
-
         <TextView
-            android:id="@+id/age"
+            android:id="@+id/state"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_10sdp"
-            android:layout_marginTop="@dimen/_10sdp"
-            android:fontFamily="@font/montserrat_semibold"
-            android:text="Age:"
-            android:textColor="@color/white"
-            android:textSize="@dimen/_12sdp"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintTop_toBottomOf="@id/need"
-            />
-        <TextView
-            android:id="@+id/agedescr"
-            android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_5sdp"
-            android:fontFamily="@font/montserrat_regular"
-            android:text="15"
+            android:text="State:"
+            android:textSize="@dimen/_12sdp"
             android:textColor="@color/white"
-            android:textSize="@dimen/_11sdp"
-            android:layout_marginTop="@dimen/_3sdp"
-            app:layout_constraintLeft_toRightOf="@id/age"
-            app:layout_constraintTop_toTopOf="@id/age"
-            app:layout_constraintBottom_toBottomOf="@id/age"
+            android:fontFamily="@font/montserrat_semibold"
+            android:layout_marginLeft="@dimen/_10sdp"
+            android:layout_marginTop="@dimen/_10sdp"
             app:layout_constraintBottom_toTopOf="@id/expand_details"
             />
+        <TextView
+            android:id="@+id/state_detail"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintLeft_toRightOf="@id/state"
+            app:layout_constraintTop_toTopOf="@id/state"
+            app:layout_constraintBottom_toBottomOf="@id/state"
+            android:textSize="@dimen/_11sdp"
+            android:textColor="@color/white"
+            android:fontFamily="@font/montserrat_regular"
+            android:text="Gujarat"
+            android:layout_marginLeft="@dimen/_5sdp"
+            />
+
         <Button
             android:id="@+id/collapse"
             android:layout_width="@dimen/_35sdp"
@@ -87,6 +86,7 @@
             android:background="@drawable/ic_baseline_keyboard_arrow_down_24"
             app:backgroundTint="@color/white"
             app:layout_constraintBottom_toBottomOf="@id/need"
+
             />
 
         <androidx.constraintlayout.widget.ConstraintLayout
@@ -98,10 +98,65 @@
             app:layout_constraintHorizontal_bias="0.0"
             app:layout_constraintLeft_toLeftOf="parent"
             app:layout_constraintRight_toRightOf="parent"
-            app:layout_constraintTop_toBottomOf="@id/age"
+            app:layout_constraintTop_toBottomOf="@id/state"
             app:layout_constraintVertical_bias="0.0">
 
+           <TextView
+               android:id="@+id/city"
+               android:layout_width="wrap_content"
+               android:layout_height="wrap_content"
+               app:layout_constraintTop_toTopOf="parent"
+               app:layout_constraintLeft_toLeftOf="parent"
+               android:layout_marginLeft="@dimen/_10sdp"
+               android:text="City:"
+               android:textSize="@dimen/_12sdp"
+               android:textColor="@color/white"
+               app:layout_constraintBottom_toTopOf="@id/age"
+               android:fontFamily="@font/montserrat_semibold"
+               android:layout_marginTop="@dimen/_10sdp"
+               />
+            <TextView
+                android:layout_width="wrap_content"
+                android:id="@+id/city_details"
+                android:layout_height="wrap_content"
+                app:layout_constraintLeft_toRightOf="@id/city"
+                app:layout_constraintBottom_toBottomOf="@id/city"
+                app:layout_constraintTop_toTopOf="@id/city"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:textSize="@dimen/_11sdp"
+                android:text="Ahmedabad"
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_regular"
+                />
+            <TextView
+                android:id="@+id/age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:fontFamily="@font/montserrat_semibold"
+                android:text="Age:"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_12sdp"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/city"
+                app:layout_constraintBottom_toTopOf="@id/gender"
+                />
 
+            <TextView
+                android:id="@+id/agedescr"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintLeft_toRightOf="@id/age"
+                app:layout_constraintTop_toTopOf="@id/age"
+                app:layout_constraintBottom_toBottomOf="@id/age"
+                />
             <TextView
                 android:id="@+id/gender"
                 android:layout_width="wrap_content"
@@ -112,10 +167,9 @@
                 android:text="Gender:"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12sdp"
-                app:layout_constraintBottom_toTopOf="@id/quantity"
+                app:layout_constraintTop_toBottomOf="@id/age"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toTopOf="parent"
-
+                app:layout_constraintBottom_toBottomOf="@id/quantity"
                 />
 
             <TextView
@@ -173,7 +227,7 @@
                 android:text="Blood Group:"
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12sdp"
-                app:layout_constraintBottom_toTopOf="@id/description"
+                app:layout_constraintBottom_toTopOf="@id/phone"
                 app:layout_constraintLeft_toLeftOf="parent"
                 app:layout_constraintTop_toBottomOf="@id/quantity"
 
@@ -195,6 +249,35 @@
                 app:layout_constraintTop_toTopOf="@id/bg" />
 
             <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/bg"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintBottom_toTopOf="@id/description"
+                android:layout_marginLeft="@dimen/_10sdp"
+                android:id="@+id/phone"
+                android:layout_marginTop="@dimen/_10sdp"
+                android:textSize="@dimen/_12sdp"
+                android:text="Phone No: "
+                android:textColor="@color/white"
+                android:fontFamily="@font/montserrat_semibold"
+                />
+
+            <TextView
+                android:id="@+id/phone_number"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="@dimen/_5sdp"
+                android:fontFamily="@font/montserrat_regular"
+                android:text="15"
+                android:textColor="@color/white"
+                android:textSize="@dimen/_11sdp"
+                android:layout_marginTop="@dimen/_3sdp"
+                app:layout_constraintLeft_toRightOf="@id/phone"
+                app:layout_constraintTop_toTopOf="@id/phone"
+                app:layout_constraintBottom_toBottomOf="@id/phone"
+                />
+            <TextView
                 android:id="@+id/description"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
@@ -205,8 +288,8 @@
                 android:textColor="@color/white"
                 android:textSize="@dimen/_12sdp"
                 app:layout_constraintLeft_toLeftOf="parent"
-                app:layout_constraintTop_toBottomOf="@id/bg"
-
+                app:layout_constraintTop_toBottomOf="@id/phone"
+                app:layout_constraintBottom_toBottomOf="parent"
                 />
 
             <TextView
