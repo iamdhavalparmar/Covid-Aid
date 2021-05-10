@@ -42,6 +42,7 @@
             />
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/entername"
             android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/_10sdp"
@@ -58,7 +59,7 @@
             android:layout_marginTop="@dimen/_15sdp"
             >
 
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:background="@color/white"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
@@ -70,6 +71,7 @@
                 android:textSize="@dimen/_15sdp" />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/enterphone"
             android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/_10sdp"
@@ -85,7 +87,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="@dimen/_15sdp"
             >
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:background="@color/white"
                 android:layout_width="match_parent"
                 android:fontFamily="@font/montserrat_regular"
@@ -97,6 +99,7 @@
                 />
         </com.google.android.material.textfield.TextInputLayout>
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/enterpassword"
             android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/_10sdp"
@@ -112,7 +115,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="@dimen/_15sdp"
             >
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:layout_width="match_parent"
                 android:fontFamily="@font/montserrat_regular"
                 android:textSize="@dimen/_15sdp"
@@ -124,6 +127,7 @@
         </com.google.android.material.textfield.TextInputLayout>
 
         <com.google.android.material.textfield.TextInputLayout
+            style="@style/Widget.MaterialComponents.TextInputLayout.OutlinedBox"
             android:id="@+id/enterrepass"
             android:layout_width="match_parent"
             android:layout_marginLeft="@dimen/_10sdp"
@@ -139,7 +143,7 @@
             app:layout_constraintRight_toRightOf="parent"
             android:layout_marginTop="@dimen/_15sdp"
             >
-            <EditText
+            <com.google.android.material.textfield.TextInputEditText
                 android:background="@color/white"
                 android:layout_width="match_parent"
                 android:fontFamily="@font/montserrat_regular"

@@ -9,15 +9,18 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/Theme.CovidAid">
-        <activity android:name=".FormContainerActivity"></activity>
-        <activity android:name=".DashboardScreen">
+        <activity android:name=".SplashScreen">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
-        <activity android:name=".Login"></activity>
+        <activity android:name=".FormContainerActivity" />
+        <activity android:name=".DashboardScreen"></activity>
+        <activity android:name=".Login">
+
+        </activity>
     </application>
 
 </manifest>

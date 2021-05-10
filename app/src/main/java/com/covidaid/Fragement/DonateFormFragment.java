@@ -53,10 +53,6 @@ TextInputLayout bloodgroupcontainer;
                     bloodgroupcontainer.setVisibility(View.GONE);
 
 
-
-
-
-
             }
         });
     }

@@ -137,5 +137,14 @@
         android:text="@string/forgot_password"
         android:textSize="@dimen/_16sdp"
         android:textColor="@color/ligh_blue"/>
+
+        <ImageView
+            android:id="@+id/image"
+            app:layout_constraintLeft_toLeftOf="parent"
+            app:layout_constraintRight_toRightOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/forgotpassword"
+            android:layout_width="@dimen/_100sdp"
+            android:layout_height="@dimen/_100sdp"/>
     </androidx.constraintlayout.widget.ConstraintLayout>
+
 </androidx.core.widget.NestedScrollView>
